@@ -1,0 +1,286 @@
+.cherry-bomb one-regular {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Skyrim';
+    src: url("fonts/Balgruf-JRye7.ttf") format('ttf');
+    src: url(fonts/misc/Balgruf-d256.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#skyrimText {
+    font-family: 'Skyrim', sans-serif;
+}
+
+body {
+    font-family: 'Cherry Bomb One', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Set position to relative for pseudo-element positioning */
+    background: url("images/city.gif") no-repeat;
+    background-size: cover;
+    color: #fff;
+    outline: black;
+}
+.about {
+    display: inline-;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); /* Adjust the alpha value to control the darkness of the overlay */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    font: sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    text-align: center;
+    display: inline-flex;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 0; /* Remove default margin for better alignment */
+}
+
+.social-icons img {
+    width: 20px; /* width of the icons */
+    margin-left: 10px; /* Space between the icons */
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0; /* Adjust the padding to make the footer smaller */
+}
+
+canvas {
+    position: fixed;
+    inset: 0;
+}
+
+.fancy {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: url("images/canadaalive.mp4");
+        background-size: 110% auto;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    font-family: sans-serif;
+}
+
+
+
+
+.media-content {
+    display: flex;
+}
+
+.media-grid {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+    width: 100vw;
+    height: 100%;
+}
+
+.grid-item img {
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.grid-item video {
+    width: 100vh;
+    height: 100%;
+    object-fit: fill;
+    flex-grow: 1;
+}
+
+.caption-right {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: auto;
+    margin: 0;
+    font-size: auto;
+    flex-grow: 1;
+}
+
+.collage-container {
+    display: flex;
+    align-items: center;
+}
+
+.collage {
+    display: flex;
+    margin-right: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.collage-img {
+    width: 40%;
+    height: auto;
+}
+
+.caption {
+    flex-grow: 1; /* Takes the remaining space in the row */
+    flex-shrink: 1;
+    justify-content: right;
+}
+
+.dual-video-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    max-width: 80%;
+    text-align: left;
+}
+
+.left .video {
+    flex-shrink: 1;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 50%);
+}
+
+.right .video {
+    width: 99vw;
+    height: 100vh;
+    
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
+}
+
+/*
+.collage column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.collage row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.collage img {
+    width:16dvh;
+    height:10dvh;
+}
+
+@media screen and (max-width: 500px) {
+    .collage .column {
+      width: 100%;
+    }
+  }
+*/
+

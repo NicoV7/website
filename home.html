@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="about/AboutMe.html">About Me</a></li>
+            <li><a href="resume/myResume.pdf">Resume</a></li>
+            <li>
+                <div class="contact-info">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nvegab99/" target="_blank" title="LinkedIn">
+                            <img src="images/linkedin.png" alt="LinkedIn Icon">
+                        </a>
+                        <a href="mailto:nvegab99@gmail.com" title="Gmail">
+                            <img src="images/gmail.png" alt="Gmail Icon">
+                        </a>
+                        <a href="https://www.instagram.com/vegus_gucci_flip_flops/" title="Gmail">
+                            <img src="images/Instagram.svg" alt="Instagram Icon">
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </nav>
+    <div class="container">
+        <img class="background-img" src="images/nature.gif" alt="Nature Background">
+        <div class="overlay-text section1">
+            <h1>Hi! I'm Nicolas Vega, welcome to my website! </h1>
+            <p>This page gives a brief overview of my work and what I enjoy!</p>
+            <p>Here's one of my more visually appealing projects. It's a python written AI model to beat Pacman! 
+               AI agents in games are a lot like real gaming strategies, weighing in factors (or features) like enemy placement, distance, and time remaining to decide their next actions
+               It even does the mind game of trying to know what they're opponents are doing via Minimax.</p>
+            <p>
+                I love optimizing and greedy search which drew me to AI. This model beats this map in 12 seconds!
+            </p>
+        </div>
+        
+        <video class="front-video" autoplay loop muted>
+            <source src="images/pacmansmall.mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="section2" class="section">
+        <img class="background-img" src="images/Peaceful River.gif" alt="Peaceful River Background">
+        <div class="overlay-text section2">
+            <h1>What Do I enjoy</h1>
+            <p>
+                The classes I took at Berkeley are relevant to 
+                AI, Machine Learning, Computer Graphics, and Computer 
+                Security. But I really enjoy Web Dev and Full Stack Development!
+            </p>
+            <p>C++, OPENGL Phong Shading and Mesh Upsampling</p>
+        </div>
+        
+        <video class="front-video" autoplay loop muted>
+            <source src="images/renderer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <button id="scrollBtn">Scroll Down</button>
+    <button id="scrollUpBtn">Scroll Up</button>
+
+    <div id="section3" class="section">
+        
+        <img class="background-img" src="images/Peaceful River.gif" alt="Peaceful River Background">
+        <iframe src="https://www.youtube.com/embed/sSPpqPjxNeM?autoplay=1&mute=1&start=8126" frameborder="0" allowfullscreen></iframe>
+        
+        <div class="overlay-text section3">
+            <h1>Fighting Games</h1>
+            <p>I was a world-recording holding speedrunner in MMOs such as Final Fantasy XIV. I also played CSGO at a professional level for awhile, before settling into fighting games!</p>
+            <p>TEKKEN is one of my favorite games, here is my Grand Finals Set at UC Berkeley's Fighting Game Club.</p>
+        </div>
+    </div>
+    
+    
+    <script src="home.js"></script>
+</body>
+</html>
