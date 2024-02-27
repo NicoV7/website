@@ -139,7 +139,7 @@ button#scrollBtn {
 }
 
 button#scrollUpBtn {
-    position: fixed;
+    position: absolute;
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
@@ -147,7 +147,8 @@ button#scrollUpBtn {
     background-color: #fff;
     border: none;
     cursor: pointer;
-    display:none;
+    display: none;
+    
     
     
 }
