@@ -15,9 +15,13 @@ document.getElementById('scrollBtn').addEventListener('click', function() {
         // Show the scroll-up button when reaching section 2
         if (scrollCount >= 2) {
             document.getElementById('scrollUpBtn').style.display = 'block';
+        } else {
+            document.getElementById('scrollUpBtn').style.display = 'none';
         }
         if (scrollCount === MAX_SCROLLS) {
             document.getElementById('scrollBtn').style.display = 'none';
+        } else {
+            document.getElementById('scrollBtn').style.display = 'block';
         }
     }
 });
@@ -32,9 +36,15 @@ document.getElementById('scrollUpBtn').addEventListener('click', function() {
         scrollCount--;
 
         // Hide the scroll-up button when going back to section 1
-        if (scrollCount === 1) {
+        if (scrollCount == 1) {
             document.getElementById('scrollUpBtn').style.display = 'none';
+        } else {
+            document.getElementById('scrollBtn').style.display = 'block';
         }
-        
+        if (scrollCount == MAX_SCROLLS) {
+            document.getElementById('scrollBtn').style.display = 'none';
+        } else {
+            document.getElementById('scrollUpBtn').style.display = 'block';
+        }
     }
 });
